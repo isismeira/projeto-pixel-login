@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/style.css">
+    <link rel="stylesheet" href="./estilos/media-query.css">
+</head>
+<body>
+    <div id="conteiner">
+        <div id="formulario">
+            <h1>RetroCity</h1>
+            <p>Please log in to play RetroCity!</p>
+            <form action="login.php" method="post">
+                <div id="email">
+                    <img src="./imagens/icone_user.png" alt="user">
+                    <input type="email" name="email" id="iemail" required placeholder=" your e-mail" autocomplete="email">
+                    <label for="iemail">email</label>
+                </div>
+                <div id="senha">
+                    <img src="./imagens/icone_senha.png" alt="senha">
+                    <input type="password" name="senha" id="isenha" required placeholder=" your password" autocomplete="current-password">
+                    <label for="isenha">senha</label>
+                </div>
+                <input type="submit" value="Login">
+                <a href="#">Forgot password</a>
+                <a href="#">Doesn't have an account? Sign Up</a>
+            </form>
+        </div>
+        <div id="foto">
+
+        </div>
+    </div>
+</body>
+</html>

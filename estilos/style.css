@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Retro';
+    src: url(../fontes/WIDEAWAKEBLACK.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --azulclaro: #A0B4F2;
+    --azulescuro: #1A2741;
+    --verde: #3C732D;
+    --amarelo: #F2994B;
+    --rosa: #D9756C;
+}
+
+body{
+    background-color: #A0B4F2;
+}
+
+#conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+#formulario {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    background-color: #1A2741;
+    height: 350px;
+    width: 300px;
+
+    border-radius: 20px 20px 0px 0px;
+    overflow: hidden;
+}
+
+#formulario > h1 {
+    font-size: 50px;
+    font-family: "Retro", sans-serif;
+    color: var(--verde);
+    text-shadow: 4px 4px 1px black;
+    border-color: black;
+}
+
+#formulario > p {
+    color: white;
+    font-size: medium;
+    text-shadow: 3px 2px 1px black;
+}
+
+img{
+    height: 20px;
+}
+
+label{
+    display: none;
+}
+
+div#email{
+    display: flex;
+    background-color: #A0B4F2;
+    margin: 5px;
+    padding: 1px;
+    box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.747);
+}
+
+div#email > input {
+    background-color: #A0B4F2;
+    height: 24px;
+    width: 90%;
+}
+
+div#senha {
+    display: flex;
+    background-color: #A0B4F2;
+    margin: 5px;
+    padding: 1px;
+    box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.74);
+}
+
+div#senha > input{
+    background-color: #A0B4F2;
+    height: 24px;
+    width: 90%;
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.699);
+    font-size: small;
+}
+
+form > input[type=submit]{
+    display: block;
+    font-size: medium;
+    width: 96%;
+    height: 36px;
+    background-color: #3C732D;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    border: none;
+    box-shadow: 3px 2px 1px rgba(0, 0, 0, 0.747);
+    cursor: pointer
+}
+
+form > input[type=submit]:hover{
+    background-color: #182e12;
+}
+
+form > a{
+    display: block;
+    text-align: center;
+    font-size: small;
+    margin: 5px;
+    padding: 5px;
+    width: 97%;
+    height: 20px;
+    border-radius: 10px;
+    color: #F2994B;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
+}
+
+form > a:hover{
+    text-decoration: underline;
+}
+
+#foto {
+    background-image: url(../imagens/foto_p.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 300px;
+
+    border-radius: 0px 0px 20px 20px;
+}

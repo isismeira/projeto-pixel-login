@@ -1,0 +1,42 @@
+/*Para telas maiores*/
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Retro';
+    src: url(../fontes/WIDEAWAKEBLACK.ttf);
+}
+@media screen and (min-width:768px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #conteiner {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #foto {
+        background-image: url(../imagens/foto_g.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 550px;
+        width: 400px;
+    
+        border-radius: 20px 0px 0px 20px;
+
+        border-right: 3px 
+    }
+
+    #formulario {
+        display: flex;
+        justify-content: center;
+
+        height: 550px;
+        width: 400px;
+
+        border-radius: 0px 20px 20px 0px;
+    }
+
+
+}
